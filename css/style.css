@@ -29,7 +29,9 @@ main,footer{
     margin: 0 auto;
 }
 
-
+figure{
+    margin: 0px;
+}
 /* added from HW3 global style reset */
 p,
 h1,
@@ -179,7 +181,7 @@ address{
 }
 
 .imgbck{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/people-office.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/people-office.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,6 +308,83 @@ address{
 
 .section-gallery{
     padding-bottom: 120px;
+}
+
+
+.our-cashless-figure img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.our-cashless-figure{
+    width: 100%;
+    height: 294px;
+    position: relative;
+    /* width: 360px;
+    height: 300px;
+    flex-shrink: 0; */
+}
+
+
+.our-cashless-figure,.figcaption-cashless{
+    top: 0px;
+    left: 0px;
+    width: 360px;
+    height: 100%;
+    background: var(--color-iris);
+    color: var(--color-cloud);
+    letter-spacing: 0.32px;    font-size: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+   
+
+}
+.figcaption-cashless{
+    padding: 40px 32px 164px 32px;
+    position: absolute;
+}
+
+.our-team-figure{
+    width: 100%;
+    height: 294px;
+    position: relative;
+    width: 360px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.our-team-figure img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.our-team-figure,.figcaption-ourteam{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: var(--color-iris);
+    color: var(--color-cloud);
+    letter-spacing: 0.32px;    font-size: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    
+
+}
+.figcaption-ourteam{
+    padding: 40px 32px 40px 32px;
+    position: absolute;
 }
 
 .our-team-name,
