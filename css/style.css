@@ -589,7 +589,7 @@ footer{
 footer, .text-footer {
     display: block;
 }
-svg {
+svg,.footer-link {
     fill:var(--color-cloud);
     display:inline-block;
     width:22px;
@@ -663,6 +663,7 @@ svg {
     border: 1px solid var(--color-ocean);
     cursor: pointer;
  }
+ 
 
  .modal{
     background-color: rgba(0,0,0,0.5);
@@ -700,7 +701,9 @@ svg {
     width: 528px;
     height: 580px;
     background: white;
-    box-shadow: ;
+    border-radius: 4px;
+    background: var(--DAIRY, #FCFCFC);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transform: none;
 }
 .modal-close{
