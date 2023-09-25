@@ -11,12 +11,11 @@
    
     --font-family-open-sans:'Open sans',san-serif;
     --font-family-roboto: 'Roboto',san-serif;
-    --transition-duration:0.1s;
 }
 
 *, *::before, *::after {
-    /* margin: 0px;
-    padding: 0px; */
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -30,9 +29,7 @@ main,footer{
     margin: 0 auto;
 }
 
-figure{
-    margin: 0px;
-}
+
 /* added from HW3 global style reset */
 p,
 h1,
@@ -142,7 +139,7 @@ address{
     color: var(--color-ocean);
 }
 
-.nav-menu-link::after{
+.line::after{
     content:"";
     height:4px;
     width: 100%;
@@ -152,7 +149,6 @@ address{
     left: 0; 
     bottom: -25px;
 }
-
 
 .nav-menu-list-item:hover, 
 .nav-menu-link-item::after{
@@ -181,8 +177,8 @@ address{
     color: var(--color-slate);
 }
 
-.imgbck{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/people-office.JPG);
+/* .imgbck{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/people-office.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,10 +186,10 @@ address{
     width:1158px;
     
     
-}
+} */
 
 .hero-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/people-office.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -311,106 +307,6 @@ address{
     padding-bottom: 120px;
 }
 
-
-.our-cashless-figure img{
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    
-}
-
-.our-cashless-figure{
-    width: 100%;
-    height: 294px;
-    position: relative;
-    /* width: 360px;
-    height: 300px;
-    flex-shrink: 0; */
-}
-
-
-.our-cashless-figure,.figcaption-cashless{
-    top: 0px;
-    left: 0px;
-    width: 360px;
-    height: 100%;
-    background: var(--color-iris);
-    color: var(--color-cloud);
-    letter-spacing: 0.32px;    
-    font-size: 16px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    overflow: hidden;
-
-}
-
-.figcaption-cashless:hover, .application-link-item{
-    transform: translateY(100%);
-    transition: transform 1s;
-    
-}
-.figcaption-cashless, figcaption{
-    padding: 40px 32px 164px 32px;
-    position: absolute;
-    overflow: hidden;
-}
-
-
-.our-team-figure{
-    width: 100%;
-    height: 294px;
-    /* position: relative;
-    width: 360px;
-    height: 300px;
-    flex-shrink: 0; */
-  
-}
-
-.ourteam-item, .figcaption-ourteam{
-    transform: translateY(0);  
-    transition: transform 1s;
-    box-shadow: 0 0.1px;
-    overflow: hidden;
-
-}
-.our-team-figure{
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-   
-    
-}
-
-.our-team-figure:hover,.figcaption-ourteam{
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: var(--color-iris);
-    color: var(--color-cloud); 
-   
-
-}
-
-.figcaption-ourteam{
-    letter-spacing: 0.32px;    font-size: 16px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 40px 32px 40px 32px;
-    position: absolute;
-    transform: translateY(100%);
-    overflow: hidden;
-    
-}
-
 .our-team-name,
 .section-features-list{
     color:var(--color-navyblue);
@@ -462,10 +358,6 @@ footer{
     padding-top: 8px;
 }
 
-
-.text-footer:hover{
-    color: var(--color-iris);  
-}
 
 .section-ourteam{
     background-color: var(--color-cloud);
@@ -589,14 +481,14 @@ footer{
 footer, .text-footer {
     display: block;
 }
-svg,.footer-link {
+/* .footer-link {
     fill:var(--color-cloud);
     display:inline-block;
     width:22px;
     height:22px;
     vertical-align:middle;
     text-align : center;
- }
+ } */
 
  .social-media-text{
     margin: 8px;
@@ -628,7 +520,6 @@ svg,.footer-link {
     
  }
 
-
  .client-list-item{
     display: flex;
     list-style: none;
@@ -643,6 +534,7 @@ svg,.footer-link {
     fill: var(--color-ocean);
     cursor: pointer;
 }
+
 .client-link-item{
     border-radius: 4px;
     display: flex;
@@ -655,14 +547,27 @@ svg,.footer-link {
 
  .client-link-item, .footer-link{
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
  }
 
  .client-link-item:hover{
     border: 1px solid var(--color-ocean);
     cursor: pointer;
  }
+
+svg:hover {
+    fill: var(--color-ocean);
+    width:"104"; 
+    height:"56";
+  }
+  
+.logo-svg:hover .overlay {
+    opacity: 1;
+   
+  }
+.image{
+    fill: var(--color-ocean);
+  }
  
 
  .modal{
