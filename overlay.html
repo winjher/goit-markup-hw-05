@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .card-team {
+      position: relative;
+      width: 264px;
+      overflow: hidden;
+    }
+
+    .image {
+      display: block;
+      width: 264px;
+      height: 50%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: .1s ease;
+      background-color: #008CBA;
+      /*  */
+      transform: translateY(100%);
+      transition: transform 1s;
+      box-shadow: 0 0.1px;
+     
+      object-fit: cover;
+      object-position: center;
+
+    }
+
+    .card-team:hover .overlay {
+      opacity: 1;
+      transform: translateY(0%);
+      transition: transform 1s;
+      box-shadow: 0 0.1px;
+      overflow: hidden;
+    }
+
+    .text {
+      color: white;
+      text-align: center;
+      letter-spacing: 0.32px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      padding: 40px 32px 40px 32px;
+      position: absolute;
+      transform: translateY(0);
+      overflow: hidden;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="card-team">
+
+   
+    <figure class="overlay">
+      <figcaption class="text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+        App · Exotic Fruit Ecommerce App · Cloud Storage App
+      </figcaption>
+    </figure>
+    <img src="./images/img1.jpg" alt="Avatar" class="image">
+   
+    <h3 class="our-team-name">Mark Guerrero</h3>
+    <p class="ourteam-work">Product Designer</p>
+  </div>
+
+</body>
+
+</html>
