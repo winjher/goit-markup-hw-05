@@ -634,6 +634,7 @@ svg:hover {
   .card-apps {
     position: relative;
     width: 360px;
+    overflow: hidden;
   }
 
   .card-apps-image {
