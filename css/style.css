@@ -761,7 +761,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--color-cornflower);
     border: 0px;
     border-radius: 50px;
     position: absolute;
@@ -771,7 +771,7 @@ footer{
     left:60%; /*-30px*/
     top: 130px;
     cursor: pointer;
-    fill: var(--CORNFLOWER, #E7E9FC);
+    fill: var(--color-cornflower);
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
     width: 24px;
