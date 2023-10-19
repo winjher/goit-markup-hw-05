@@ -760,10 +760,10 @@ footer{
     right: 8px;
     /* top: 8px; */
     position: absolute;
-    left: 950px;
+    left: 900px;
 
     /* left: 60%; */
-    top: 50px;
+    top: 70px;
     cursor: pointer;
     fill: var(--color-cornflower);
     stroke-width: 1px;
