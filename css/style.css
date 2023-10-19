@@ -501,7 +501,7 @@ footer{
 .client-link-item{
     border-radius: 4px;
     display: flex;
-    border: 1px solid var(--color-navyblue);
+    border: 1px solid var(--color-light-slate);
     width: 168px;
     height: 88px;
     align-items: center;
@@ -536,7 +536,7 @@ footer{
 .company-svg{
     width: 104px;
     height: 56px;
-    fill: light-slate;
+    fill: var(--color-light-slate);
     
 }
  .company-svg:hover{
